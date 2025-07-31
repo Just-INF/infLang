@@ -13,5 +13,7 @@ namespace infLang
         public static ConcurrentDictionary<string, List<string>>functions = new ConcurrentDictionary<string, List<string>>();
         //Function Name -> Variable Name -> Variable Value ( local variables )
         public static ConcurrentDictionary<string, ConcurrentDictionary<string, dynamic>> variables = new ConcurrentDictionary<string, ConcurrentDictionary<string, dynamic>>();
+        //Global variables
+        public static ConcurrentDictionary<string, dynamic> globalVariables = new ConcurrentDictionary<string, dynamic>();
     }
 }
